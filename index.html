@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Breaker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="vault">
+            <div class="code-display">
+                <span id="digit1">_</span>
+                <span id="digit2">_</span>
+                <span id="digit3">_</span>
+            </div>
+        </div>
+        
+        <div class="tries">Tries Left: <span id="tries-left">7</span></div>
+        
+        <div class="button-panel">
+            <button onclick="addDigit(1)">1</button>
+            <button onclick="addDigit(2)">2</button>
+            <button onclick="addDigit(3)">3</button>
+            <button onclick="clearGuess()">Clear</button>
+        </div>
+        
+        <div class="log">
+            <p>Log:</p>
+            <ul id="log-list"></ul>
+        </div>
+    </div>
+    
+</body>
+</html>
